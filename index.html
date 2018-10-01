@@ -10,15 +10,15 @@
 </head>
 <body>
 
-<canvas id="myCanvas" width="480" height="320"></canvas>
+<canvas id="myCanvas" width="1280" height="720"></canvas>
 
 <script>
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var x = canvas.width/2;
 var y = canvas.height-30;
-var dx = 2.00;
-var dy = -2.00;
+var dx = 7.00;
+var dy = -7.00;
 var ballRadius = 10;
 var paddleHeight = 10;
 var paddleWidth = 75;
@@ -27,7 +27,7 @@ var rightPressed = false;
 var leftPressed = false;
 var gameSpeed = 10;
 var brickRowCount = 3;
-var brickColumnCount = 5;
+var brickColumnCount = 14;
 var brickWidth = 75;
 var brickHeight = 20;
 var brickPadding = 10;
@@ -109,8 +109,8 @@ function draw() {
         else {
         x = canvas.width/2;
         y = canvas.height-30;
-        dx = 2;
-        dy = -2;
+        dx = 7;
+        dy = -7;
         paddleX = (canvas.width-paddleWidth)/2;
         }
       }
